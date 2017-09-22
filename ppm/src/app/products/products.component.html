@@ -1,0 +1,12 @@
+<div *ngIf='!tight'>
+	<h1>1st Place</h1>
+	<h2>{{winner.login}} (Score: {{winPoints}})</h2>
+	<h1>2nd Place</h1>
+	<h2>{{looser.login}} (Score: {{loosPoints}})</h2>
+	</div>
+<div *ngIf='tight'>
+	<h1>TIGHT!</h1>
+	<h1>{{user1.login}} (Score: {{user1Points}})</h1>
+	<h1>{{user2.login}} (Score: {{user2Points}})</h1>
+</div>
+<button (click)='reset()'>Reset</button>
